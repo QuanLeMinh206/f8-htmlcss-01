@@ -1,0 +1,560 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primaryColor: #0f1b4c;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins";
+}
+
+/* Common */
+
+a {
+    text-decoration: none;
+}
+.content {
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+    display: inline-block; /* vi the a la inline */
+    min-width: 98px;
+    background: var(--primaryColor);
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    padding: 18px 16px;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.sub-title {
+    color: #000339;
+
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+.desc {
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* header */
+.header {
+    background-color: #e6f0ff;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+.navbar .action {
+    margin-left: auto;
+}
+.navbar ul a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #4f5361;
+}
+.navbar ul li {
+    padding: 8px 14px;
+}
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.action .action-link {
+    color: var(--primaryColor);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.action-btn {
+    padding: 13px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+}
+
+/* hero info */
+.hero {
+    margin-top: 130px;
+}
+.hero .info {
+    width: 51%; /*559/1110px */
+}
+
+.hero .sub-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.18px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #687690;
+}
+
+.hero .title {
+    color: #000336;
+    font-size: 6.4rem;
+
+    font-weight: 700;
+    line-height: 7.6rem;
+    margin-bottom: 30px;
+}
+.hero .desc {
+    color: #5a6473;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    margin-bottom: 40px;
+}
+
+.hero .hero-cta {
+    min-width: 170px;
+}
+
+.hero-img {
+    position: absolute;
+    bottom: 0;
+    right: calc((100vw - 1110px) / 2 - 100px);
+}
+
+/* ========Clients========== */
+.clients {
+    margin-top: 79px;
+    padding: 43px 0 64px;
+}
+.clients .row {
+    display: flex;
+    justify-content: space-between;
+}
+.row-desc {
+    margin-top: 23px;
+}
+/* .clients .row .desc {
+    color: #7d8589;
+    font-size: 1.6rem;
+    font-weight: 500;
+} */
+
+.image-brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+/* ========Guides========== */
+.guides {
+    margin-top: 40px;
+    padding: 94px 0 79px;
+}
+.guides .sub-title {
+    position: relative;
+    color: #000339;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+.guides .sub-title::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.guides .desc {
+    margin: 20px auto 0;
+    max-width: 459px;
+
+    text-align: center;
+}
+
+.list-guide {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+.guide-items {
+    margin: 0 70px;
+    text-align: center;
+}
+.guide-items .icon {
+    margin-bottom: 26px;
+}
+.guide-items .title {
+    margin-bottom: 10px;
+    color: #3b3c45;
+
+    font-size: 2rem;
+    font-weight: 500;
+}
+.guide-items .link {
+}
+.guide-items .link span {
+    margin-right: 8px;
+    color: #0689ff;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.guides-cta {
+    margin-top: 50px;
+    text-align: center;
+}
+.guides-cta .btn {
+    min-width: 170px;
+}
+
+/* ========featured========== */
+.featured {
+    margin-top: 41px;
+    padding: 110px 0;
+    background: #f5fafe;
+}
+.featured .row {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.featured .link span {
+    margin-right: 8px;
+    color: #0689ff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.featured .link .arrow {
+    position: relative;
+    top: -1px;
+}
+
+.featured .list {
+    margin-top: 70px;
+    display: flex;
+    gap: 30px; /*  */
+
+    justify-content: space-between;
+}
+
+.featured .item {
+    flex: 1; /* .list chia deu width cho 3 the con */
+    background-color: #fff;
+    border-radius: 12px; /* thẻ con trồi khỏi thẻ cha có thể sài overflow:hidden không nên dùng */
+}
+
+.featured .item .thumb {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.featured .item .body {
+    padding: 17px 20px 24px;
+}
+
+.featured .item .body .title a {
+    color: #000339;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.featured .item .body .desc {
+    --line-clamp: 3;
+    margin-top: 11px;
+    color: #a3a6ab;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    word-break: break-all; /* có thể user sẽ dán đường link hoặc desc bị dính liền nhau */
+}
+.featured .item .body .info {
+    margin-top: 22px;
+    display: flex;
+
+    align-items: center;
+}
+.featured .item .body .info .icon:not(:first-child) {
+    margin-left: 23px;
+}
+
+.featured .item .body .info .label {
+    margin-left: 8px;
+    color: #4d4d52;
+
+    font-size: 1.4rem;
+
+    font-weight: 500;
+
+    letter-spacing: 0.14px;
+}
+
+/* ========stats========== */
+.stats {
+    margin-top: 75px;
+    margin: 50px 0;
+}
+.stats .content {
+    width: 1017px;
+}
+.stats .row {
+    display: flex;
+    margin-bottom: 110px;
+}
+.stats .img-block,
+.stats .info {
+    width: 50%;
+}
+.stats .img-block .image {
+    display: block;
+    margin-left: auto; /* vì img là inline tag nên phải chỉnh về block mới margin đc*/
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.stats .info {
+    padding: 79px 0 0 165px;
+}
+.img-block {
+    position: relative;
+}
+.stats-trend {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    width: 239px;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 90px 85px 100px 0px rgba(0, 0, 0, 0.06);
+}
+.stats-trend .row {
+    margin: 45px 22px 8px;
+}
+.stats-trend .row .value {
+    color: #000339;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.26px;
+}
+.stats-trend .row .icon {
+    margin-left: auto; /* vì cha có display flex nên ko cần đặt display-block cho nó */
+}
+.stats-trend .desc {
+    color: #a7a7a7;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    width: 194px;
+    margin: 0 22px 25px;
+}
+.stats-trend .separate {
+    width: 19.3rem;
+    height: 1px;
+    background: #e9e9e9;
+    margin: 0 22px 25px;
+}
+.stats .info .sub-title {
+    position: relative;
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    width: 269px;
+    margin-bottom: 20px;
+}
+.stats .info .sub-title::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+    top: -10px;
+}
+.stats .info .desc {
+    width: 309px;
+    font-weight: 400;
+}
+
+.stats .avatar-block {
+    margin: 0 22px 41px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 14px; /*khoang cach column va row cua the con*/
+}
+.stats .avatar-group {
+    display: flex;
+}
+.stats .avatar-group .avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.stats .avatar-group .avatar:not(:first-child) {
+    margin-left: -3px;
+}
+.stats .avatar-group .avatar:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: orangered;
+    font-size: 7.261px;
+    font-weight: 450;
+    letter-spacing: -0.145px;
+}
+
+.stats .content .row:last-child {
+    margin: 0 0 50px;
+    justify-content: space-between;
+}
+.stats .content .row .qty-item .qty {
+    color: #000;
+    font-size: 6.4rem;
+    font-weight: 600;
+}
+.stats .content .row .qty-item .qty-desc {
+    color: #7b8087;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 22px;
+}
+.subscription {
+    margin-top: 90px;
+}
+
+.subscription .body {
+    display: flex;
+    height: 370px;
+    border-radius: 20px;
+    background: #063183;
+}
+
+.subscription .body .info {
+    width: 670px;
+    margin-left: 80px;
+    max-width: 100%;
+}
+.subscription .body .info .sub-title {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    margin: 110px 0 15px 0;
+}
+.subscription .body .info .desc {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0.7;
+}
+.subscription .body .info .btn {
+    border-radius: 12px;
+    background: #fff;
+    color: #002366;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 150px;
+}
+.subscription .body .image {
+    position: relative;
+    top: -60px;
+    width: 218px;
+    height: 438px;
+}
+
+/*============ footer ==========*/
+.footer {
+    margin-top: 55px;
+    background: #fff;
+    padding: 50px 0 58px;
+}
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .row .column .heading {
+    color: #1c1c1d;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 42px;
+}
+.footer .row .column .item:not(:last-child) {
+    margin-bottom: 18px;
+}
+.footer .row .column .item a {
+    color: #7a7a7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer .row .column .item a:hover {
+    color: #063183;
+}
+.footer .row .column .desc {
+    max-width: 257px;
+}
+.footer .row .column .social {
+    margin-top: 40px;
+}
+.footer .row .column .social .social-link {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background: #f9f9f9;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 5px;
+    margin-left: 16px;
+    transition: transform 0.2s;
+}
+.footer .row .column .social .social-link:hover {
+    transform: scale(1.3);
+    background: #d3d2d2;
+}
+.footer .row:last-child {
+    margin-top: 81px;
+}
+.footer .row .copyright {
+    color: #c2c2c2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
